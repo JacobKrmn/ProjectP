@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ProjectP
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for addTaskTodayDialog.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class addTaskTodayDialog : Window
     {
-        public MainWindow()
+        public addTaskTodayDialog()
         {
             InitializeComponent();
         }
-
-        private void addTaskToday(object sender, RoutedEventArgs e) {
-            addTaskTodayDialog window = new addTaskTodayDialog();
-            window.Show();
-        }
-
     }
 }

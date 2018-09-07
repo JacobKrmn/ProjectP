@@ -54,7 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="addTaskTodayDialog.xaml.cs">
+      <DependentUpon>addTaskTodayDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Task.cs" />
+    <Page Include="addTaskTodayDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
