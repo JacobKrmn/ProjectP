@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Project P" Height="450" Width="800">
     <Grid>
-        
+        <Grid Name="NavGrid" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="150">
+            <Button Content="Vandaag" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.837,0.864" Height="30"/>
+            <Button Content="Plan!" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.837,0.864" Height="30"/>
+        </Grid>
+        <Grid Name ="ContentGrid" HorizontalAlignment="Left" Height="399" Margin="165,10,0,0" VerticalAlignment="Top" Width="617"/>
     </Grid>
 </Window>
