@@ -14,8 +14,12 @@
         </Grid>
         <Grid Name ="PlanningGrid" HorizontalAlignment="Left" Height="399" Margin="165,10,0,0" VerticalAlignment="Top" Width="400">
             <Label Content="Je planning voor vandaag" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <DataGrid HorizontalAlignment="Left" Height="337" Margin="10,52,0,0" VerticalAlignment="Top" Width="380"/>
+            <DataGrid HorizontalAlignment="Left" Height="275" Margin="10,52,0,0" VerticalAlignment="Top" Width="380"/>
+            <Button Content="Taak toevoegen" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Width="120" Height="30" FontSize="14"/>
+            <RadioButton Content="Laat alles zien" HorizontalAlignment="Left" Margin="161,347,0,0" VerticalAlignment="Top" FontSize="15"/>
+            <RadioButton Content="Filter op te doen" HorizontalAlignment="Left" Margin="161,374,0,0" VerticalAlignment="Top" FontSize="15"/>
 
         </Grid>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
 </Window>
