@@ -23,5 +23,20 @@ namespace ProjectP
         {
             InitializeComponent();
         }
+
+        private void addTaskClick(object sender, RoutedEventArgs e)
+        {
+            string desc = descBox.GetLineText(0);
+            string time = timeBox.GetLineText(0);
+
+            Task task = new Task(desc,
+                DateTime.Now,
+                true,
+                false,
+                int.Parse(time));
+            var win = (MainWindow)Application.Current.MainWindow;
+            win.addTaskToList(task);
+        }
+
     }
 }

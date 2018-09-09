@@ -20,15 +20,28 @@ namespace ProjectP
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public List<Task> tasksToday = new List<Task>();
+
         public MainWindow()
         {
             InitializeComponent();
+            todayList.ItemsSource = tasksToday;
         }
 
-        private void addTaskToday(object sender, RoutedEventArgs e) {
+        private void addTaskToday(object sender, RoutedEventArgs e) { //Event handler for the 'Toevoegen' button
             addTaskTodayDialog window = new addTaskTodayDialog();
             window.Show();
         }
+
+        public void addTaskToList(Task task) {
+            tasksToday.Add(task);
+            todayList.ItemsSource = tasksToday;
+            Console.WriteLine(tasksToday.Count);
+        }
+
+
+        
 
     }
 }

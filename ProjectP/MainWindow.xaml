@@ -14,6 +14,14 @@
         </Grid>
         <Grid Name ="PlanningGrid" HorizontalAlignment="Left" Height="399" Margin="165,10,0,0" VerticalAlignment="Top" Width="400">
             <Label Content="Je planning voor vandaag" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <ListBox Name ="todayList" HorizontalAlignment="Left" Height="280" Margin="10,52,0,0" VerticalAlignment="Top" Width="236">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding taskName}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Content="Taak toevoegen" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="addTaskToday"/>
 
         </Grid>
     </Grid>

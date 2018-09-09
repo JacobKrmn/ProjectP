@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectP
 {
-    class Task
+    public class Task
     {
         public string taskName { get; set; }
         public DateTime DateAndTimePlanned { get; set; }
